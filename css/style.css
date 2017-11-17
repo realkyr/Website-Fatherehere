@@ -13788,3 +13788,136 @@ body:not(.no-transition) #wrapper,
 	line-height:1.8;
 	font-family: 'Kanit-Regular', sans-serif;
 }
+
+/* log in page style
+-----------------------------------------------------------------*/
+.login-page .panel p{
+	font-weight:400;
+	color:rgba(60,55,75,.7);
+	padding-bottom:5px
+}
+
+.row-fluid {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.login-page .panel {
+    top: 50%;
+    padding: 40px 50px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px){
+.col-lg-offset-2 {
+    margin-left: 16.66666667%;
+}
+}
+
+@media (min-width: 1200px){
+.col-lg-8 {
+    width: 66.66666667%;
+}
+}
+
+@media (min-width: 1200px){
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+}
+}
+
+.panel-credit-card, .panel-default {
+    border-color: #ddd;
+    padding: 10px 30px;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel {
+    border: 0;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(50,86,123,.16);
+    box-shadow: 0 4px 8px 0 rgba(50,86,123,.16);
+}
+
+.login-page {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background: linear-gradient(30deg,#22313f,rgba(60,55,75,.9));
+    background-size: 200% 200%;
+    overflow-x: hidden;
+}
+
+.row-fluid {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.panel-credit-card>.panel-heading, .panel-default>.panel-heading {
+    color: #3c374b;
+    background-color: #fff;
+    border-color: #fff0;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.form-group .control-label {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #f9690e;
+    letter-spacing: .7px;
+
+}
+[data-braintree-class=braintree-input], input:not([type]), input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select.form-control, textarea {
+    border-radius: 3px;
+    border-color: #dfdfdf;
+    color: #3c374b;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    font-size: 14px!important;
+    margin-bottom: 2px;
+    padding: 4px 12px;
+    font-weight: 300;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border: 0;
+    letter-spacing: .7px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.login-page .panel .panel-body-special {
+    position: absolute;
+    top: 20px;
+    padding: 30px;
+    width: 35%;
+    height: 93.3%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    right: 15px;
+    text-align: center;
+}
+
+.login-page .panel .panel-body-special >.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-page .panel .panel-body-special h4 {
+    font-weight: 280;
+    padding-top: 56px;
+    padding-right: 20px;
+    line-height: 1.5em;
+    color: rgba(60,55,75,.8);
+}
