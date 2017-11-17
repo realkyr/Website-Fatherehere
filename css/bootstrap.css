@@ -1821,6 +1821,14 @@ input[type="search"] {
 .form-group {
   margin-bottom: 15px;
 }
+
+.addspacebut{
+  margin-bottom: 20px;
+}
+.addspacebut2{
+  margin-bottom: 40px;
+}
+
 .radio,
 .checkbox {
   position: relative;

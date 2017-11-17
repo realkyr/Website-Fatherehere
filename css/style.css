@@ -12438,54 +12438,6 @@ body:not(.device-touch) .tagcloud a {
 .nav-tree ul ul ul ul a { padding-left: 60px; }
 .nav-tree ul ul ul ul ul a { padding-left: 80px; }
 
-
-/* ----------------------------------------------------------------
-	34. Wedding
------------------------------------------------------------------*/
-
-
-.wedding-head {
-	position: relative;
-	line-height: 1;
-	font-size: 80px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-}
-
-.wedding-head .first-name,
-.wedding-head .last-name,
-.wedding-head .and {
-	display: inline-block;
-	margin-right: 15px;
-	font-weight: bold;
-	text-align: right;
-	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 2px;
-}
-
-.wedding-head .last-name {
-	margin: 0 0 0 15px;
-	text-align: left;
-}
-
-.wedding-head .first-name span,
-.wedding-head .last-name span {
-	display: block;
-	margin-top: 10px;
-	font-size: 56px;
-	font-weight: 400;
-	font-style: italic;
-	font-family: 'Crete Round', serif;
-	text-transform: none;
-}
-
-.wedding-head .and {
-	margin: 0;
-	font-size: 200px;
-	font-family: 'Times New Roman', serif;
-}
-
-
 /* ----------------------------------------------------------------
 	35. Bootstrap Specific
 -----------------------------------------------------------------*/
@@ -13635,7 +13587,7 @@ body:not(.no-transition) #wrapper,
 }
 
 .rc-footer .footer-nav{
-	padding:100px 20px 80px
+	padding:80px 20px 80px
 }
 
 @media (min-width:320px) and (max-width:768px)
