@@ -1,11 +1,6 @@
 .tImage{
-	width: 48%;
-	margin: 0 10px 0 0;
-	padding: 0;
-	overflow: hidden;
-	float: left;
-	background: none;
-	height: 110px;
+	width: 1000px;
+	height: auto;
 }
 
 .tText{
