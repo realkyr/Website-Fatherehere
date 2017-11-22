@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="./img/favicon.png">
     <!-- Document Title
     ============================================= -->
-    <title>FAT HEREHERE</title>
+    <title>calories calculator</title>
 
 <body class="stretched device-lg">
     <!-- The Main Wrapper
@@ -38,16 +38,17 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="standard-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="retina-logo"><img src="./img/logo.png" alt=""></a>
                     </div>
                     <!-- #logo end -->
                     <!-- Primary Navigation
                     ============================================= -->
                     <nav id="primary-menu">
                         <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="article_home.html">บทความสุขภาพ</a></li>
-                            <li><a href="calories.html">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="article_home.php">บทความสุขภาพ</a></li>
+                            <li><a href="calories.php">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -55,46 +56,65 @@
         </header>
         <!-- Nav Bar End
         ============================================= -->
-        <body>
-        <!-- One Big Banner  -->
-            <section class="big-banner">
-                <img src="img/big-banner-01.jpg" alt="" style="width: 100%">
-            </section>
-            <section class="rc-section">
-                <div class="container">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2 class="rc-title text-center">พันธกิจของพวกเรา</h2> 
-                        <p class="rc-sub text-center">คือการสร้างเสริมสุขภาพที่ดีให้กับคนไทย
-                                และเป็นเพื่อนซี้ที่ปรึกษาด้านสุขภาพให้กับคุณ</p>
-                    </div>
-                </div>
-            </section>
-        </body>
-    </div>
-    <section class="rc-section rc-stats">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2 class="rc-title">Statistics</h2> 
-                    <p class="rc-sub">What we are currently managing around the globe</p>
-                </div>
-            </div>
-            <div class="rc-stats-count">
-                <div class="row">
-                    <div class="col-xs-8 col-sm-8 col-md-4 col-lg-15 col-xs-offset-2 col-md-offset-4">
-                        <div class="panel"><div class="rc-stat-icon">
-                            <img src="./img/git-commit-icon.svg" alt="Git Commit Icon">
-                        </div>
-                        <div class="panel-body">
-                            <h5>แสดงผลข้อมูลสถิติตรงนี้</h5>
-                            <h4 class="js-countup">16670</h4>
+        <?php
+            include('backend.php');
+        ?>
+        <section class="login-page">
+            <div class="row row-fluid">
+                <div class="col-xl-6 col-xl-offset-3 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Result</h3>
+                            <table>
+                                <tr>
+                                    <td>ค่า BMR </td>
+                                    <td>
+                                        <?php
+                                            food::counter_add($_POST['weight'], $_POST['height']);
+                                            echo food::BMR($_POST['sex'], $_POST['age'], $_POST['weight'], $_POST['height']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ค่า TDEE</td>
+                                    <td>
+                                        <?php
+                                            echo food::TDEE(food::BMR($_POST['sex'], $_POST['age'], $_POST['weight'], $_POST['height']), $_POST['level']);
+                                        ?>
+                                        แคลโลรี่ ต่อวัน
+                                    </td>
+                                </tr>
+                                <?php if(!($_POST['breakfast']=='' && $_POST['lunch']=='' && $_POST['dinner']=='')){ ?>
+                                    <tr>
+                                        <td>อาหารที่รับประทาน</td>
+                                        <td>
+                                            <?php
+                                                echo food::inputfood($_POST['breakfast'], $_POST['lunch'], $_POST['dinner']);
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>พลังงานที่ได้รับ</td>
+                                        <td>
+                                            <?php
+                                                echo food::calorie($_POST['breakfast'], $_POST['lunch'], $_POST['dinner']);
+                                            ?>
+                                            แคลโลรี่ 
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </table>
+                            <h1 align="center">
+                                <?php
+                                    food::result();
+                                ?>
+                            </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Nav Fotter
     ============================================= -->
     <section class="rc-footer">
@@ -136,31 +156,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h5>Copyright 2017 © FatHereHere. All rights reserved</h5>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/phureek" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/facebook.svg?rccbt=1" alt="Facebook Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/GdYora" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/twitter.svg?rccbt=1" alt="Twitter Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/user/keimakhun" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/youtube.svg?rccbt=1" alt="Youtube Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </footer>

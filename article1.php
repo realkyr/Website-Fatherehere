@@ -39,16 +39,16 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="standard-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="retina-logo"><img src="./img/logo.png" alt=""></a>
                     </div>
                     <!-- #logo end -->
                     <!-- Primary Navigation
                     ============================================= -->
                     <nav id="primary-menu">
                         <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="article_home.html">บทความสุขภาพ</a></li>
-                            <li><a href="calories.html">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
+                            <li><a href="article_home.php">บทความสุขภาพ</a></li>
+                            <li><a href="calories.php">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -150,31 +150,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h5>Copyright 2017 © FatHereHere. All rights reserved</h5>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/phureek" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/facebook.svg?rccbt=1" alt="Facebook Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/GdYora" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/twitter.svg?rccbt=1" alt="Twitter Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/user/keimakhun" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/youtube.svg?rccbt=1" alt="Youtube Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </footer>

@@ -39,16 +39,16 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="standard-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="retina-logo"><img src="./img/logo.png" alt=""></a>
                     </div>
                     <!-- #logo end -->
                     <!-- Primary Navigation
                     ============================================= -->
                     <nav id="primary-menu">
                         <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="article_home.html">บทความสุขภาพ</a></li>
-                            <li><a href="calories.html">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
+                            <li><a href="article_home.php">บทความสุขภาพ</a></li>
+                            <li><a href="calories.php">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -64,13 +64,13 @@
                 <div class="row thumbnail-list">
                     <div class="col-md-6 col-xs-6 ">  
                         <div class="thumbnail">
-                            <a href="article1.html"><img src="https://www.health-th.com/wp-content/uploads/2017/10/drinking-warm-water.jpg" alt="ดื่มน้ำอุ่น"></a>
+                            <a href="article1.php"><img src="https://www.health-th.com/wp-content/uploads/2017/10/drinking-warm-water.jpg" alt="ดื่มน้ำอุ่น"></a>
                             <div class="caption">
                                 
-                                <h3><a href="article1.html"><font color='#4bbc8c'>10 ประโยชน์ของการดื่มน้ำอุ่น</font></a></h3>
+                                <h3><a href="article1.php"><font color='#4bbc8c'>10 ประโยชน์ของการดื่มน้ำอุ่น</font></a></h3>
                                 <p>วันที่เผยแพร่ &nbsp;15.7.2017&nbsp;(4 เดือนที่ผ่านมา)</p>
                                 <p>การดื่มน้ำมีความสำคัญต่อร่างกายและวิถีชีวิต ผู้เชี่ยวชาญด้านสุขภาพและผิวพรรณต่างเห็นตรงกันว่าการดื่มน้ำนั้นช่วยขับสารพิษออกจากร่างกาย...
-                                    <a href="article1.html" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
+                                    <a href="article1.php" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
                                 </p>
                             </div>
                         </div>
@@ -78,13 +78,13 @@
 
                     <div class="col-md-6 col-xs-6 ">  
                         <div class="thumbnail">
-                            <a href="article2.html"><img src="https://www.health-th.com/wp-content/uploads/2017/07/obesity.jpg" alt="ภาวะโยโย่"></a>
+                            <a href="article2.php"><img src="https://www.health-th.com/wp-content/uploads/2017/07/obesity.jpg" alt="ภาวะโยโย่"></a>
                             <div class="caption">
                                 
-                                <h3><a href="article2.html"><font color='#4bbc8c'>ภาวะโยโย่จากการอดอาหาร เป็นอันตรายต่อสุขภาพของคุณ</font></a></h3>
+                                <h3><a href="article2.php"><font color='#4bbc8c'>ภาวะโยโย่จากการอดอาหาร เป็นอันตรายต่อสุขภาพของคุณ</font></a></h3>
                                 <p>วันที่เผยแพร่ &nbsp;05.08.2017&nbsp;(3 เดือนที่ผ่านมา)</p>
                                 <p>เมื่อคุณต้องการลดน้ำหนักให้รูปร่างดูดี การอดอาหารมักจะเป็นเรื่องที่ดึงดูดใจของใครหลายๆคน ซึ่งเป็นการลดน้ำหนักที่ง่ายและรวดเร็ว (ในระยะเวลาสั้นๆ)...
-                                    <a href="article2.html" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
+                                    <a href="article2.php" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
                                 </p>
                             </div>
                         </div>
@@ -94,13 +94,13 @@
 
                     <div class="col-md-6 col-xs-6 ">  
                         <div class="thumbnail">
-                            <a href="article3.html"><img src="https://www.health-th.com/wp-content/uploads/2017/10/running.jpg" alt="วิ่ง"></a>
+                            <a href="article3.php"><img src="https://www.health-th.com/wp-content/uploads/2017/10/running.jpg" alt="วิ่ง"></a>
                             <div class="caption">
                                 
-                                <h3><a href="article3.html"><font color='#4bbc8c'>6 ประโยชน์ของการวิ่ง</font></a></h3>
+                                <h3><a href="article3.php"><font color='#4bbc8c'>6 ประโยชน์ของการวิ่ง</font></a></h3>
                                 <p>วันที่เผยแพร่ &nbsp;05.10.2017&nbsp;(2 เดือนที่ผ่านมา)</p>
                                 <p>ทุกคนทราบกันดีอยู่แล้วว่าการวิ่งนั้นสามารถช่วยลดน้ำหนักและปรับรูปร่างได้ แต่คุณรู้หรือไม่ว่าความจริงแล้วการวิ่งนั้นมีประโยชน์ต่อร่างกายแทบทุกส่วน รวมไปถึงยกระดับอารมณ์ของคุณขึ้นมาได้ด้วย การวิ่งนั้นช่วยให้คุณสุขภาพดีขึ้นอย่างเหลือเชื่อ...
-                                    <a href="article3.html" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
+                                    <a href="article3.php" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
                                 </p>
                             </div>
                         </div>
@@ -108,13 +108,13 @@
 
                     <div class="col-md-6 col-xs-6 ">  
                         <div class="thumbnail">
-                            <a href="article4.html"><img src="https://www.health-th.com/wp-content/uploads/2017/05/walk.jpg" alt="เดิน"></a>
+                            <a href="article4.php"><img src="https://www.health-th.com/wp-content/uploads/2017/05/walk.jpg" alt="เดิน"></a>
                             <div class="caption">
                                 
-                                <h3><a href="article4.html"><font color='#4bbc8c'>5 เหตุผล ที่คุณควรเดิน 9,900 ก้าวต่อวัน</font></a></h3>
+                                <h3><a href="article4.php"><font color='#4bbc8c'>5 เหตุผล ที่คุณควรเดิน 9,900 ก้าวต่อวัน</font></a></h3>
                                 <p>วันที่เผยแพร่ &nbsp;09.11.2017&nbsp;(1 เดือนที่ผ่านมา)</p>
                                 <p>การเดินเป็นการออกกําลังกายที่ง่ายที่สุด ทุกคนสามารถทําได้ ไม่ว่าจะอยู่ในวัยไหนก็สามารถเดินได้โดยไม่เกิดอาการบาดเจ็บหรือผลข้างเคียงใดๆ เพียงแค่เดินให้ถูกวิธี เราลองมาดูกันค่ะว่าประโยชน์จากการเดินนั้นมีมากมายแค่ไหนประโยชน์ของการเดิน 1....
-                                    <a href="article4.html" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
+                                    <a href="article4.php" class="read-more" title="read this article"><font color='#4bbc8c'>[อ่านต่อ]</font></a>
                                 </p>
                             </div>
                         </div>
@@ -165,31 +165,6 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h5>Copyright 2017 © FatHereHere. All rights reserved</h5>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/phureek" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/facebook.svg?rccbt=1" alt="Facebook Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/GdYora" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/twitter.svg?rccbt=1" alt="Twitter Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/user/keimakhun" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/youtube.svg?rccbt=1" alt="Youtube Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

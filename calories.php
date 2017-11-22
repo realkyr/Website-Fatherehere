@@ -38,17 +38,16 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="standard-logo"><img src="./img/logo.png" alt=""></a>
+                        <a href="index.php" class="retina-logo"><img src="./img/logo.png" alt=""></a>
                     </div>
                     <!-- #logo end -->
                     <!-- Primary Navigation
                     ============================================= -->
                     <nav id="primary-menu">
                         <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="article_home.html">บทความสุขภาพ</a></li>
-                            <li><a href="calories.html">โปรแกรมคำนวณแคลรอรี่ต่อวัน</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="article_home.php">บทความสุขภาพ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -61,9 +60,63 @@
                 <div class="col-xl-6 col-xl-offset-3 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3>Result</h3>
-                            <p>แสดงผลคำแนะนำ ว่ากินเกินความต้องการไหม</p>
-                            
+                            <h3>Calories Calculator</h3>
+                            <p>โปรแกรมคำนวณแคลรอรี่ที่ร่างกายต้องการต่อวัน แล้วให้คำแนะนำในการทานอาหาร</p>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div><!----> 
+                                        <form action="result.php" method="POST" role="form">
+                                            <div class="form-group">
+                                                <label class="control-label">เพศ:</label>
+                                                <select class="form-control" id="gender" name="sex">
+                                                    <option value="0">ชาย</option>
+                                                    <option value="1">หญิง</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">อายุ</label>
+                                                <input required type="number" name="age" placeholder="40" class="form-control input-lg"> <!---->
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">ส่วนสูง</label>
+                                                <input required type="number" name="height" placeholder="180" class="form-control input-lg"> <!---->
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">น้ำหนัก</label>
+                                                <input required type="number" name="weight" placeholder="80" class="form-control input-lg"> <!---->
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">การใช้พลังงาน</label>
+                                                <select type="number" name="level" class="form-control input-lg">
+                                                    <option value="0">ไม่ออกกำลังกาย ทำงานอยู่กับที่</option>
+                                                    <option value="1">ออกกำลังเล็กน้อย 1-3 วัน / สัปดาห์</option>
+                                                    <option value="2">ออกกำลังปลานกลาง 3-5 วัน / สัปดาห์</option>
+                                                    <option value="3">ออกกำลังหนัก 7 วัน / สัปดาห์</option>
+                                                    <option value="4">ออกกำลังกายหนักมาก ทำงานใช้แรง</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">มื้อเช้า</label>
+                                                <input type="text" name="breakfast" placeholder="Shrimp Pad Thai (กรอกภาษาอังกฤษ)" class="form-control input-lg"> <!---->
+                                            </div> 
+                                            <div class="form-group">
+                                                <label class="control-label">มื้อกลางวัน</label>
+                                                <input type="text" name="lunch" placeholder="Shrimp Pad Thai (กรอกภาษาอังกฤษ)" class="form-control input-lg"> <!---->
+                                            </div> 
+                                            <div class="form-group">
+                                                <label class="control-label">มื้อเย็น</label>
+                                                <input type="text" name="dinner" placeholder="Shrimp Pad Thai (กรอกภาษาอังกฤษ)" class="form-control input-lg"> <!---->
+                                            </div> 
+                                            <button type="submit" class="btn btn-success btn-block btn btn-base btn-block">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 panel-body-special hidden-sm hidden-xs">
+                                    <h4>"Let food be thy medicine and medicine be thy food."</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,31 +164,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h5>Copyright 2017 © FatHereHere. All rights reserved</h5>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/phureek" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/facebook.svg?rccbt=1" alt="Facebook Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/GdYora" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/twitter.svg?rccbt=1" alt="Twitter Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/user/keimakhun" target="_blank" rel="nofollow">
-                                    <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/youtube.svg?rccbt=1" alt="Youtube Social Icon">
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </footer>
