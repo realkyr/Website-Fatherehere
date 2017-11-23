@@ -86,7 +86,7 @@
                             <img src="./img/git-commit-icon.svg" alt="Git Commit Icon">
                         </div>
                         <div class="panel-body">
-                            <h5>แสดงผลข้อมูลสถิติตรงนี้</h5>
+                            <h5>ค่าเฉลี่ย BMI ของผู้ใช้งานเว็บทั้งหมด</h5>
                             <h4 class="js-countup">
                                 <?php
                                     include('backend.php');
