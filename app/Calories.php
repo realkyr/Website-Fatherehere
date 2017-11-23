@@ -20,14 +20,12 @@ class Calories extends Model
 
         $food_cal = $breakfast + $lunch + $dinner;
 
-        if ($food_cal < $calories) {
-            $text = "คุณได้รับสารอาหารน้อยเกินไป";
+        if ($food_cal > $calories) {
+            $text = "กินเยอะเกินไปแล้วจ้า";
         }
-        elseif ($food_cal > $bmr){
-            $text = "คุณได้รับสารอาหารมากเกินไป";
+        elseif ($food_cal < $bmr){
+            $text = "กินน้อยเกินไปแล้วววว";
         }
-
-
 
         return [$bmr, $calories, $food_cal, $text];
     }
