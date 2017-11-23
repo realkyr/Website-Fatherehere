@@ -90,7 +90,7 @@
                             <h4 class="js-countup">
                                 <?php
                                     include('backend.php');
-                                    echo intval(food::counter_show());
+                                    echo number_format(floatval(food::counter_show()), '2', '.', ' ');
                                 ?>
                             </h4>
                         </div>
