@@ -20,6 +20,8 @@ class Calories extends Model
 
         $food_cal = $breakfast + $lunch + $dinner;
 
+        $text = "กินพอดีแล้วจ้า";
+
         if ($food_cal > $calories) {
             $text = "กินเยอะเกินไปแล้วจ้า";
         }
