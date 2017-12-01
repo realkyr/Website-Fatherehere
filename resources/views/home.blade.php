@@ -142,21 +142,21 @@
                             <li>
                                 <a href="https://www.facebook.com/phureek" target="_blank" rel="nofollow">
                                     <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/facebook.svg?rccbt=1" alt="Facebook Social Icon">
+                                        <img src="{{asset('img/facebook.svg')}}" alt="Facebook Social Icon">
                                     </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/GdYora" target="_blank" rel="nofollow">
                                     <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/twitter.svg?rccbt=1" alt="Twitter Social Icon">
+                                        <img src="{{asset('img/twitter.svg')}}" alt="Twitter Social Icon">
                                     </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/user/keimakhun" target="_blank" rel="nofollow">
                                     <span class="icon-holder">
-                                        <img src="https://cf1.cdn.runcloud.io/img/youtube.svg?rccbt=1" alt="Youtube Social Icon">
+                                        <img src="{{asset('img/youtube.svg')}}" alt="Youtube Social Icon">
                                     </span>
                                 </a>
                             </li>
